@@ -143,3 +143,52 @@ fn destructuring_with_underscore_ex() {
 //           The value of x is: 1
 //           The value of x is: 1
 //           The value of x is: 1 .........
+
+fn advanced_destructuring_example() {
+    println!("Advanced Destructuring Example");
+    let (first, ..) = (1, 2, 3);
+    println!("The value of first is: {}", first);
+
+    let (.., last) = (1, 2, 3);
+    println!("The value of last is: {}", last);
+
+    // Incorrect Destructuring
+    // let (.., mid, ..) = (1, 2, 3);
+    println!();
+}
+
+// Output : Advanced Destructuring Example
+//           The value of first is: 1
+//           The value of last is: 3
+//           The value of first is: 1
+//           The value of last is: 3
+//           The value of first is: 1
+//           The value of last is: 3
+//           The value of first is: 1
+//           The value of last is: 3..........
+
+
+fn very_advanced_destructuring_example() {
+    println!("Very Advanced Destructuring Example");
+    struct Point {
+        x: i32,
+        y: i32,
+    };
+
+    let point = Point { x: 1, y: 2 };
+    let Point { x, y } = point;
+
+    println!("The value of x is: {}", x);
+    println!("The value of y is: {}", y);
+
+    // Incorrect Destructuring
+    // let Point { a, b } = point;
+    println!();
+}
+// Output : Very Advanced Destructuring Example
+//           The value of x is: 1
+//           The value of y is: 2
+//           The value of x is: 1
+//           The value of y is: 2
+//           The value of x is: 1
+//           The value of y is: 2.........
