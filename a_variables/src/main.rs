@@ -4,7 +4,7 @@ const LIFE_LESSONS_ARE_NOT_WORTH_IT: u32 = 0;
 fn main() {
     immutable_variable_ex();
     mutable_variable_ex();
-    constant_example();
+    constant_ex();
 }
 
 fn immutable_variable_ex() {
@@ -23,11 +23,27 @@ fn mutable_variable_ex() {
     // This will print x + 6
 }
 
-fn constant_example() {
+fn constant_ex() {
     println!("Constant Example");
     println!("Life lessons are worth it: {}", LIFE_LESSONS_ARE_WORTH_IT);
     println!("Life lessons are not worth it: {}", LIFE_LESSONS_ARE_NOT_WORTH_IT);
 
     // Output : Life lessons are worth it: 180
     //          Life lessons are not worth it: 0
+}
+
+fn shadowing_ex() {
+    println!("Shadowing Example");
+    let x = 9;
+    println!("x is : {}", x);
+    let x = x + 1;
+    println!("x is : {}", x);
+    let x = x * 2;
+    println!("x is : {}", x);
+    let x = true;
+    println!("x is : {}", x);
+    // Output : x is : 10
+    //          x is : 18
+    //          x is : 9
+    //          x is : true
 }
