@@ -7,6 +7,7 @@ fn main() {
     constant_ex();
     shadowing_ex();
     scope_ex();
+    type_annotation_ex();
 
 }
 
@@ -63,5 +64,26 @@ fn scope_ex() {
             //------------------------------------------ INNER SCOPE
         }
         println!("The value of x in outer scope is: {}", x);
+
     //---------------------------------------------- OUTER SCOPE
+      
 }
+    // Output : The value of y is: 300
+    //          The value of x in inner scope is: 200
+    //          The value of x in outer scope is: 200
+
+
+fn type_annotation_ex() {
+        println!("Type Annotation Example");
+        let x: i32 = 15;
+        println!("The value of i32 x is: {}", x);
+        let x: u8 = 15;
+        println!("The value of u8 x is: {}", x);
+        println!();
+}
+    
+//  Output :  Type Annotation Example
+//            The value of i32 x is: 15
+//            The value of u8 x is: 15
+
+
