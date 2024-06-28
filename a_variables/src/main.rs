@@ -5,6 +5,9 @@ fn main() {
     immutable_variable_ex();
     mutable_variable_ex();
     constant_ex();
+    shadowing_ex();
+    scope_ex();
+
 }
 
 fn immutable_variable_ex() {
@@ -46,4 +49,19 @@ fn shadowing_ex() {
     //          x is : 18
     //          x is : 9
     //          x is : true
+}
+
+fn scope_ex() {
+    println!("Scope Example");
+    //---------------------------------------------- OUTER SCOPE
+        let x = 200;
+        {
+            //------------------------------------------ INNER SCOPE
+            let y = 300;
+            println!("The value of y is: {}", y);
+            println!("The value of x in inner scope is: {}", x);
+            //------------------------------------------ INNER SCOPE
+        }
+        println!("The value of x in outer scope is: {}", x);
+    //---------------------------------------------- OUTER SCOPE
 }
