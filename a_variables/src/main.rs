@@ -9,6 +9,10 @@ fn main() {
     scope_ex();
     type_annotation_ex();
     mutable_vs_shadowing_ex();
+    advanced_destructuring_ex();
+    very_advanced_destructuring_ex();
+    destructuring_ex();
+    destructuring_with_underscore_ex()
 
 }
 
@@ -144,7 +148,7 @@ fn destructuring_with_underscore_ex() {
 //           The value of x is: 1
 //           The value of x is: 1 .........
 
-fn advanced_destructuring_example() {
+fn advanced_destructuring_ex() {
     println!("Advanced Destructuring Example");
     let (first, ..) = (1, 2, 3);
     println!("The value of first is: {}", first);
@@ -168,12 +172,12 @@ fn advanced_destructuring_example() {
 //           The value of last is: 3..........
 
 
-fn very_advanced_destructuring_example() {
+fn very_advanced_destructuring_ex() {
     println!("Very Advanced Destructuring Example");
     struct Point {
         x: i32,
         y: i32,
-    };
+    }
 
     let point = Point { x: 1, y: 2 };
     let Point { x, y } = point;
