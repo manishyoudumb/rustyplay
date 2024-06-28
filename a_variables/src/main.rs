@@ -8,6 +8,7 @@ fn main() {
     shadowing_ex();
     scope_ex();
     type_annotation_ex();
+    mutable_vs_shadowing_ex();
 
 }
 
@@ -87,3 +88,26 @@ fn type_annotation_ex() {
 //            The value of u8 x is: 15
 
 
+
+fn mutable_vs_shadowing_ex() {
+    println!("Mutable vs Shadowing Example");
+    // Can change the value of the var but not the type
+    let mut x = 5;
+    println!("The value of x is: {}", x);
+    x = 6;
+    println!("The new value of x is: {}", x);
+
+    let x = x + 1;
+    println!("The value of x is: {}", x);
+
+    // Can change both value and type
+    let x = false;
+    println!("The value of x is: {}", x);
+    println!();
+}
+
+// Output : Mutable vs Shadowing Example
+//           The value of x is: 5
+//           The new value of x is: 6
+//           The value of x is: 7
+//           The value of x is: false
