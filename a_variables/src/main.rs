@@ -111,3 +111,35 @@ fn mutable_vs_shadowing_ex() {
 //           The new value of x is: 6
 //           The value of x is: 7
 //           The value of x is: false
+
+
+fn destructuring_ex() {
+    println!("Destructuring Example");
+    let (x, y) = (1, 2);
+    println!("The value of x is: {}", x);
+    println!("The value of y is: {}", y);
+    println!();
+}
+    // Output : Destructuring Example
+    //           The value of x is: 1
+    //           The value of y is: 2
+
+
+fn destructuring_with_underscore_ex() {
+    println!("Destructuring with Underscore Example");
+    // Not Recommended. Why? Because it is not idiomatic Rust code.
+
+    let (x, _) = (1, 2);
+    println!("The value of x is: {}", x);
+    println!();
+}
+
+// Output : Destructuring with Underscore Example
+//           The value of x is: 1
+//           The value of y is: 2
+//           The value of x is: 1
+//           The value of x is: 1
+//           The value of x is: 1
+//           The value of x is: 1
+//           The value of x is: 1
+//           The value of x is: 1 .........
