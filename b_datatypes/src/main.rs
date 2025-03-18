@@ -4,10 +4,16 @@ scalar_type();
 
 /* Scalar Type
 > represents a single value
->  4 primary types : integer, floating-point number, boolean, or character
+>  4 primary types : integer, floating-point number, Numeric operations, boolean, or character
 */
 fn scalar_type() {
-    // Integer Types
+/*Integer Types
+   > An integer is a number without a fractional component.
+   > Rust has signed and unsigned integers.
+   > Signed integers can store positive and negative values.
+   > Unsigned integers can store only positive values.
+   > The number in the type name indicates the number of bits the integer type uses.
+*/
     let mut x:i8 = 42; // i8 : signed 8-bit integer
     let mut y:u8 =42;  // u8 : unsigned 8-bit integer
 
@@ -26,8 +32,73 @@ fn scalar_type() {
     let mut x:isize = 42; // isize : signed integer
     let mut y:usize =42;  // usize : unsigned integer
 
-    // Floating-Point Types
+/*Floating-Point Types
+    > A floating-point number is a number with a decimal point.
+    > Rust has two floating-point types: f32 and f64.
+    > f32 is a single-precision float, and f64 is a double-precision float.
+    > f64 is the default type for floating-point numbers because it is more precise.
+*/
+
     let mut x:f32 = 42.0; // f32 : 32-bit floating-point number
     let mut y:f64 = 42.0; // f64 : 64-bit floating-point number
-    
+
+/*Numeric Operations
+    > Rust supports the basic arithmetic operations: addition, subtraction, multiplication, and division.
+    > Rust also supports the remainder operation, which calculates the remainder of the division of two numbers.
+    > The remainder operation is also called the "modulo operation."
+    > Rust also supports the power operation, which calculates the power of a number.
+*/
+
+    let sum = 5 + 10; // addition
+    let difference = 95.5 - 4.3; // subtraction
+    let product = 4 * 30; // multiplication
+    let quotient = 56.7 / 32.2; // division
+    let remainder = 43 % 5; // remainder
+    let power = 2u32.pow(4); // power
+
+/*Boolean Type
+    > A boolean type represents a logical value.
+    > A boolean type can have one of two values: true or false.
+*/
+
+    let t = true;
+    let f: bool = false;
+
+/*Character Type
+    > A character type represents a single Unicode character.
+    > Rust's char type is four bytes in size and represents a Unicode Scalar Value.
+    > A Unicode Scalar Value is a unique number that represents a Unicode character.
+    > Rust's char type is not a single byte like other programming languages.
+*/
+
+    let c = 'z';
+    let z = 'ℤ';
+    let heart_eyed_cat = '😻';
+    println!("The value of i8 x is: {}", x);
+    println!("The value of u8 x is: {}", y);
+    println!("The value of i16 x is: {}", x);
+    println!("The value of u16 x is: {}", y);
+    println!("The value of i32 x is: {}", x);
+    println!("The value of u32 x is: {}", y);
+    println!("The value of i64 x is: {}", x);
+    println!("The value of u64 x is: {}", y);
+    println!("The value of i128 x is: {}", x);
+    println!("The value of u128 x is: {}", y);
+    println!("The value of isize x is: {}", x);
+    println!("The value of usize x is: {}", y);
+    println!("The value of f32 x is: {}", x);
+    println!("The value of f64 x is: {}", y);
+    println!("The value of sum is: {}", sum);
+    println!("The value of difference is: {}", difference);
+    println!("The value of product is: {}", product);
+    println!("The value of quotient is: {}", quotient);
+    println!("The value of remainder is: {}", remainder);
+    println!("The value of power is: {}", power);
+    println!("The value of t is: {}", t);
+    println!("The value of f is: {}", f);
+    println!("The value of c is: {}", c);
+    println!("The value of z is: {}", z);
+    println!("The value of heart_eyed_cat is: {}", heart_eyed_cat);
+    println!();
+
 }
