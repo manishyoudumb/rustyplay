@@ -196,3 +196,4 @@ fn very_advanced_destructuring_ex() {
 //           The value of y is: 2
 //           The value of x is: 1
 //           The value of y is: 2.........
+
