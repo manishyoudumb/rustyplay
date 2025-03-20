@@ -1,5 +1,6 @@
 fn main() {
 scalar_type();
+compund_type();
 }
 
 /* Scalar Type
@@ -102,3 +103,45 @@ fn scalar_type() {
     println!();
 
 }
+
+/*Compound Type
+    > Compound types can group multiple values into one type.
+    > Rust has two primitive compound types: tuples and arrays.
+    > Compound types can store multiple values of different types.
+    > Compound types can store multiple values of the same type.
+*/
+
+fn compound_type() {
+/*Tuple Type
+    > A tuple is a collection of values of different types.
+    > A tuple is a fixed-size collection of values.
+    > A tuple can have any number of elements.
+    > A tuple can have elements of different types.
+    > A tuple can have elements of the same type.
+    > A tuple is created by enclosing the values in parentheses.
+    > A tuple can be destructured to access its elements.
+    > Allocated on the stack as it has a fixed size and is immutable.
+    > Cannot grow or shrink in size. 
+*/
+
+    let tup: (i32, f64, u8) = (500, 6.4, 1);
+    let (x, y, z) = tup;
+    let five_hundred = tup.0;
+    let six_point_four = tup.1;
+    let one = tup.2;
+
+    println!("The value of x is: {}", x);
+    println!("The value of y is: {}", y);
+    println!("The value of z is: {}", z);
+    println!("The value of five_hundred is: {}", five_hundred);
+    println!("The value of six_point_four is: {}", six_point_four);
+    println!("The value of one is: {}", one);
+    println!();
+
+/* Array Type
+
+ */
+}
+
+
+
