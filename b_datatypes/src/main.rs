@@ -123,23 +123,20 @@ fn compound_type() {
     > Allocated on the stack as it has a fixed size and is immutable.
     > Cannot grow or shrink in size. 
 */
+println!("Tuple Type Examples");
+    let 
 
-    let tup: (i32, f64, u8) = (500, 6.4, 1);
-    let (x, y, z) = tup;
-    let five_hundred = tup.0;
-    let six_point_four = tup.1;
-    let one = tup.2;
-
-    println!("The value of x is: {}", x);
-    println!("The value of y is: {}", y);
-    println!("The value of z is: {}", z);
-    println!("The value of five_hundred is: {}", five_hundred);
-    println!("The value of six_point_four is: {}", six_point_four);
-    println!("The value of one is: {}", one);
-    println!();
 
 /* Array Type
-
+    > An array is a collection of values of the same type.
+    > An array is a fixed-size collection of values.
+    > An array can have any number of elements.
+    > An array is created by enclosing the values in square brackets.
+    > An array can be initialized with the same value for each element.
+    > An array can be initialized with a list of values.
+    > An array can be accessed by its index.
+    > Allocated on the stack as it has a fixed size and is immutable.
+    > Cannot grow or shrink in size.
  */
 }
 
