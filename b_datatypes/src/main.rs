@@ -124,7 +124,10 @@ fn compound_type() {
     > Cannot grow or shrink in size. 
 */
 println!("Tuple Type Examples");
-    let 
+    let tup: (i32, f64, char, bool) = (500, 6.4, 'x', true);
+    let tup1: (i32, f64, char, bool) = (500, 6.4, 'x', false);
+    let person: (char, i32, f32) = ('manish',20,20.5);
+    
 
 
 /* Array Type
@@ -138,6 +141,17 @@ println!("Tuple Type Examples");
     > Allocated on the stack as it has a fixed size and is immutable.
     > Cannot grow or shrink in size.
  */
+ println!("Array Type Examples");
+     let arr1:[i32;3] = [1,2,3,4];
+     let arr2:[i32;3] = [1,2,3];
+     let arr3:[i32;3] = [1,2,3];
+     let arr4:[i32;3] = [1,2,3];
+     let arr5:[i32;3] = [1,2,3];
+     let arr6:[i32;3] = [1,2,3];
+     let arr7:[i32;3] = [1,2,3];
+
+
+     
 }
 
 
