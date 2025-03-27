@@ -126,7 +126,7 @@ fn compound_type() {
 println!("Tuple Type Examples");
     let tup: (i32, f64, char, bool) = (500, 6.4, 'x', true);
     let tup1: (i32, f64, char, bool) = (500, 6.4, 'x', false);
-    let person: (char, i32, f32) = ('manish',20,20.5);
+    let person: (char, i32, f32) = ('m', 20, 20.5);
     
 
 
@@ -142,7 +142,7 @@ println!("Tuple Type Examples");
     > Cannot grow or shrink in size.
  */
  println!("Array Type Examples");
-     let arr1:[i32;3] = [1,2,3,4];
+     let arr1:[i32;3] = [1,2,3];
      let arr2:[i32;3] = [1,2,3];
      let arr3:[i32;3] = [1,2,3];
      let arr4:[i32;3] = [1,2,3];
