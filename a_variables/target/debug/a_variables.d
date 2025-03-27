@@ -1,1 +1,1 @@
-C:\Users\slaye\SudoMaverick\RustyCargo\a_variables\target\debug\a_variables.exe: C:\Users\slaye\SudoMaverick\RustyCargo\a_variables\src\main.rs
+/home/keir/rustycargo/rustyplay/a_variables/target/debug/a_variables: /home/keir/rustycargo/rustyplay/a_variables/src/main.rs

@@ -1,6 +1,22 @@
 const LIFE_LESSONS_ARE_WORTH_IT: u32 = 180;
 const LIFE_LESSONS_ARE_NOT_WORTH_IT: u32 = 0;
 
+/*Variable Declaration and Initialization
+Rust is a statically typed language, which means that it must know the types of all variables at compile time.
+Rust has type inference, which means that it can usually determine the type of a variable based on the value assigned to it.
+Rust also allows you to explicitly specify the type of a variable.
+Rust has two types of variables: immutable and mutable.
+Rust has constants, which are always immutable.
+Rust has shadowing, which allows you to redefine a variable with the same name.
+Rust has scope, which is the range within the program for which an item is valid.
+Rust has type annotation, which allows you to explicitly define the type of a variable.
+Rust has destructuring, which is a way to break down a complex data structure into simpler parts.
+Rust has advanced destructuring, which allows you to ignore some values in a tuple.
+Rust has very advanced destructuring, which allows you to destructure a struct.
+Rust has destructuring with an underscore, which is not recommended.
+Rust has mutable vs shadowing, which is different from making a variable mutable.
+*/
+
 fn main() {
     immutable_variable_ex();
     mutable_variable_ex();
