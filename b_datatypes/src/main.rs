@@ -1,6 +1,6 @@
 fn main() {
 scalar_type();
-compund_type();
+compound_type();
 }
 
 /* Scalar Type
